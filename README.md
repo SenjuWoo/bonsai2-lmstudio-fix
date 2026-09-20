@@ -20,14 +20,17 @@ stock llama.cpp and refuses those types outright. No setting, no re-download, no
 **Fix:** this script swaps PrismML's prebuilt Windows binaries into LM Studio's engine folder —
 it backs up the originals first, then verifies the engine actually starts.
 
-## One-liner
+## One-click
+
+Download [`fix.bat`](https://github.com/SenjuWoo/bonsai2-lmstudio-fix/raw/main/fix.bat) and double-click it.
+
+Or, in PowerShell:
 
 ```powershell
 irm https://raw.githubusercontent.com/SenjuWoo/bonsai2-lmstudio-fix/main/install.ps1 | iex
 ```
 
-Or download [`fix.bat`](https://github.com/SenjuWoo/bonsai2-lmstudio-fix/raw/main/fix.bat) and
-double-click it. Or clone the repo and run `.\install.ps1`.
+Or clone the repo and run `.\install.ps1`.
 
 Then load your model in LM Studio — no restart needed.
 
