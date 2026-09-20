@@ -45,7 +45,7 @@ Then load your model in LM Studio — no restart needed.
 ## Requirements
 
 - Windows x64 + LM Studio (recent version), used at least once
-- ~1 GB free disk (downloads are cached for re-runs)
+- ~1 GB free disk per installed engine version (the CUDA runtime DLLs are copied into each; downloads are cached for re-runs)
 
 ## Options
 
