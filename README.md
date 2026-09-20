@@ -22,9 +22,13 @@ it backs up the originals first, then verifies the engine actually starts.
 
 ## One-click
 
-Download [`fix.bat`](https://github.com/SenjuWoo/bonsai2-lmstudio-fix/raw/main/fix.bat) and double-click it.
+1. **[Download `fix.bat`](https://github.com/SenjuWoo/bonsai2-lmstudio-fix/releases/latest/download/fix.bat)** (latest release).
+2. Double-click it. It does everything by itself: downloads PrismML's binaries, backs up your engine files, patches LM Studio, and verifies the engine starts.
+3. Load your model in LM Studio — no restart needed.
 
-Or, in PowerShell:
+> Running a downloaded `.bat`? If Windows shows *"Windows protected your PC"*, click **More info → Run anyway**.
+
+Or, in PowerShell (same thing, one line):
 
 ```powershell
 irm https://raw.githubusercontent.com/SenjuWoo/bonsai2-lmstudio-fix/main/install.ps1 | iex
