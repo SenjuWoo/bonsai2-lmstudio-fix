@@ -42,4 +42,4 @@ The updated manifest routing has not been exercised through a fresh LM Studio UI
 
 An existing v1.0.0 installation may have replaced LM Studio's native root libraries. This update preserves those files rather than silently restoring unknown state; restore the old complete backup or re-download the stock runtime before using the new isolated routing.
 
-No new public GitHub release is published by this maintenance update. The historical v1.0.0 assets remain unchanged; the README directs users to current source.
+Release assets are built from the exact commit whose CI passed, with standalone `fix.bat`, `install.ps1`, an installer ZIP, and SHA-256 checksums. Published downloads are compared against the local asset bytes before release verification is reported. Historical v1.0.0 assets remain unchanged.

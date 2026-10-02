@@ -5,7 +5,7 @@ echo Bonsai 2 / PrismML runtime for LM Studio
 echo Unload models and close LM Studio before installing.
 if exist "%~dp0install.ps1" goto local
 set "BONSAI_INSTALLER=%TEMP%\bonsai2-lmstudio-fix-%RANDOM%-%RANDOM%.ps1"
-powershell -NoProfile -ExecutionPolicy Bypass -Command "$ErrorActionPreference='Stop'; [Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12; Invoke-WebRequest 'https://raw.githubusercontent.com/SenjuWoo/bonsai2-lmstudio-fix/main/install.ps1' -UseBasicParsing -OutFile $env:BONSAI_INSTALLER"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "$ErrorActionPreference='Stop'; [Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12; Invoke-WebRequest 'https://github.com/SenjuWoo/bonsai2-lmstudio-fix/releases/download/v1.1.0/install.ps1' -UseBasicParsing -OutFile $env:BONSAI_INSTALLER"
 if errorlevel 1 goto download_failed
 powershell -NoProfile -ExecutionPolicy Bypass -File "%BONSAI_INSTALLER%" %*
 set "RESULT=%ERRORLEVEL%"

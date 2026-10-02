@@ -8,10 +8,10 @@ Stock runtimes can reject `PTQ1_0` / `PQ2_0` with `invalid ggml type 143/142`. B
 
 1. Install [LM Studio](https://lmstudio.ai/download), download a Windows x64 llama.cpp runtime, and select it for GGUF models.
 2. Unload models and close LM Studio. If you used this project's original DLL-swapping installer, re-download the selected runtime in LM Studio first to restore its native libraries.
-3. [Download the current source ZIP](https://github.com/SenjuWoo/bonsai2-lmstudio-fix/archive/refs/heads/main.zip), extract it, and double-click `fix.bat`.
+3. [Download the installer ZIP](https://github.com/SenjuWoo/bonsai2-lmstudio-fix/releases/latest/download/bonsai2-lmstudio-fix-1.1.0.zip), extract it, and double-click `fix.bat`.
 4. Restart LM Studio, load the model, and check generation.
 
-The adjacent `install.ps1` is used when present. A [standalone current `fix.bat`](https://raw.githubusercontent.com/SenjuWoo/bonsai2-lmstudio-fix/main/fix.bat) fetches the installer from `main`. The historical v1.0.0 release remains the old DLL-swapping implementation; use current source for these changes.
+The adjacent `install.ps1` is used when present. You can also [download just `fix.bat`](https://github.com/SenjuWoo/bonsai2-lmstudio-fix/releases/latest/download/fix.bat); the v1.1.0 launcher fetches its matching release installer. [All releases and checksums](https://github.com/SenjuWoo/bonsai2-lmstudio-fix/releases/latest). The historical v1.0.0 release remains the old DLL-swapping implementation.
 
 PowerShell, from the extracted folder:
 
