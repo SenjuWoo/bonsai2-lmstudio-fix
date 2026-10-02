@@ -5,11 +5,11 @@ permissions:
 jobs:
   windows:
     runs-on: windows-latest
-    strategy:
-      matrix:
-        shell: [powershell, pwsh]
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - name: Check installer behavior
-        shell: ${{ matrix.shell }}
+      - name: Check Windows PowerShell 5.1
+        shell: powershell
+        run: ./tests/Test-Installer.ps1
+      - name: Check PowerShell 7
+        shell: pwsh
         run: ./tests/Test-Installer.ps1
