@@ -7,8 +7,9 @@
 # Bonsai 2 runtime for LM Studio
 
 <p>
-  <a href="https://github.com/SenjuWoo/bonsai2-lmstudio-fix/releases/latest"><img src="https://img.shields.io/github/v/release/SenjuWoo/bonsai2-lmstudio-fix?label=release&color=2E6B52&labelColor=0d1117" alt="latest release"></a>
+  <a href="https://github.com/SenjuWoo/bonsai2-lmstudio-fix/actions/workflows/test.yml"><img src="https://github.com/SenjuWoo/bonsai2-lmstudio-fix/actions/workflows/test.yml/badge.svg" alt="CI"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-2E6B52?labelColor=0d1117" alt="MIT License"></a>
+  <a href="https://github.com/SenjuWoo/bonsai2-lmstudio-fix/releases/latest"><img src="https://img.shields.io/github/v/release/SenjuWoo/bonsai2-lmstudio-fix?label=release&color=2E6B52&labelColor=0d1117" alt="latest release"></a>
 </p>
 
 </div>
