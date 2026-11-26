@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased - documentation
+
+- README rebuilt around a cover image, a CI badge, terminal shots from real runs (dry-run selection
+  against a fixture LM Studio folder, and the offline installer checks), an options table and a
+  diagram of the install steps. The installer and its release assets are unchanged.
+- CI history: the only failed run, on 2026-10-02, was a workflow file GitHub could not parse (the run
+  is named after the file path and has no jobs). It was fixed the same minute, and every "Installer
+  checks" run since has passed.
+
 ## 1.1.0 - 2026-10-02
 
 - Update the PrismML baseline to `prism-b10743-adfffbe` and retain explicit CUDA 12.4 / 13.3 builds.
